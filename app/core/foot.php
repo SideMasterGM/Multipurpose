@@ -106,9 +106,7 @@
                 });
             }
             RsParticlesAddOn(revapi1);
-        }); /*ready*/
+        });
         </script>
     </body>
-
-<!-- Mirrored from iqonicthemes.com/themes/qwilo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Apr 2019 13:08:57 GMT -->
 </html>
