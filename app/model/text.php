@@ -1,0 +1,2 @@
+<?php
+	$Company = "Side Master";
