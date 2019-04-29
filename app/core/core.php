@@ -22,6 +22,9 @@
     	case 'testimonials': 
     		$pagename = 'Testimonials';
     		break;
+    	case 'videos': 
+    		$pagename = 'Videos';
+    		break;
     	case 'portfolio': 
     		$pagename = 'Portfolio';
     		break;
