@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php echo $pagename; ?> | <?php echo $Company; ?></title>
+        <title><?php echo $Info->pagename; ?> | <?php echo $Info->company; ?></title>
         <meta charset="utf-8">
         <link rel="shortcut icon" type="image/png" href="<?php echo FAVICON; ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

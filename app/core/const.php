@@ -12,7 +12,8 @@
 
 	define ("PD_VIEWS",		$Path."/app/views");
 	define ("PD_MODEL",		$Path."/app/model");
-		define ("PD_MODEL_TEXT",	$Path."/app/model/text.php");
+		define ("PF_MODEL",		$Path."/app/model/model.php");
+		define ("PF_TEXT",	$Path."/app/model/text.php");
 		
 	define ("PD_CTL",$Path."/app/controller");
 		define ("PD_CTL_JS", 	$Path."/app/controller/js");
