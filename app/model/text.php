@@ -5,6 +5,7 @@
 	$Info->address = 'Houston, TX';
 
 	$Info->addPhone('(832) 845-6401');
+	$Info->addPhone('(666) 666-6401');
 	$Info->addEmail('contact@vazquezpaintingandremodeling.com');
 	$Info->addEmail('israelsantos179@gmail.com');
 
@@ -26,6 +27,18 @@
 	$Info->twitter	= '#';
 	$Info->linkedin	= '#';
 
-	// echo $Info->getEmail(1)['email'];
+	#SEO
+	$Info->domain;
+	$Info->satisfaction		= '';
+	$Info->locality			= '';
+	$Info->region			= '';
+	$Info->street_address	= '';
+	$Info->bilingual		= '';
+	$Info->seo_convert 		= $Info->getSEOPhone(1)['SEOConvert'];
+
+	// echo $Info->seo_convert;
+
+	// echo $Info->getWords($Info->services, 20);
+	// echo $Info->getEmail(1)['Email'];
 	// echo $Info->getPhone(1)['PhoneRef'];
 	$color = ['dominant' => '', 'tonic' => '', 'mediation' => ''];

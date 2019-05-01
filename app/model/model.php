@@ -26,7 +26,17 @@
 		public $twitter;
 		public $linkedin;
 
+		#SEO
+		public $domain;
+		public $satisfaction;
+		public $locality;
+		public $region;
+		public $street_address;
+		public $bilingual;
+		public $seo_convert;
+
 		function __construct(){
+			$this->domain 	= $_SERVER['HTTP_HOST'];
 			$this->basename = $this->filescript();
 
 		    switch ($this->basename) {
@@ -89,14 +99,30 @@
 		public function getEmail($number){
 			if (is_array($this->emails)){
 				if (isset($this->emails[$number - 1])){
-					return ['email' => $this->emails[$number - 1], 'MailRef' => 'mailto:'.$this->emails[$number - 1]];
+					return ['Email' => $this->emails[$number - 1], 'MailRef' => 'mailto:'.$this->emails[$number - 1]];
 				}
+
 				$msg = 'This field does not exist';
-				return ['email' => $msg, 'MailRef' => $msg];
+				return ['Email' => $msg, 'MailRef' => $msg];
 			}
 
 			$msg = 'There are not emails records';
-			return ['email' => $msg, 'MailRef' => $msg];
+			return ['Email' => $msg, 'MailRef' => $msg];
+		}
+
+		public function getWords($sentence, $count = 23){
+			return implode(' ', array_slice(str_word_count($sentence,1), 0, $count));
+		}
+
+		public function getSEOPhone($id_phone){
+			$Phone = $this->getPhone($id_phone)['PhoneConvert'];
+			
+			if (str_word_count($Phone) > 2)
+				return ['SEOConvert' => $Phone, 'SEOPhone' => $Phone];
+
+			$convert = str_replace(str_split(' '), '-', $Phone);
+			
+			return ['SEOConvert' => $convert, 'SEOPhone' => '+1'.$convert];
 		}
 
 	}
