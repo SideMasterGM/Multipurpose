@@ -82,6 +82,21 @@
 					  "Hacen un maravilloso trabajo y un gran equipo. Lo recomiendo al 100.", 
 					  5);
 
+	# addLandingPage(title, link, paragraphs)
+	$Info->addLanding('Flagstone Patios and Entryways', 
+					  'flagstone-patios-and-entryways.php', 
+					  ['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, nisi, adipisci. Provident at dolorum similique! Provident accusantium, aliquam cumque, quod, praesentium at soluta cupiditate molestias dicta omnis porro totam ea.', 
+					   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore porro repudiandae ducimus rem expedita sapiente, quae, atque iste quis beatae animi libero voluptatum sint doloribus voluptates maiores eligendi amet reprehenderit.', 
+					   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laboriosam expedita error tempora, iure mollitia doloremque, ut repellat consequuntur quam fuga optio earum ratione autem! Velit in doloribus beatae ex!']);
+
+	# addBlog(title,  autor_name, paragraph, date)
+	$Info->addBlog('Blog Entry Title', 
+				  'Jerson Martínez', 
+				  ['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, nisi, adipisci. Provident at dolorum similique! Provident accusantium, aliquam cumque, quod, praesentium at soluta cupiditate molestias dicta omnis porro totam ea.', 
+				   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore porro repudiandae ducimus rem expedita sapiente, quae, atque iste quis beatae animi libero voluptatum sint doloribus voluptates maiores eligendi amet reprehenderit.', 
+				   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laboriosam expedita error tempora, iure mollitia doloremque, ut repellat consequuntur quam fuga optio earum ratione autem! Velit in doloribus beatae ex!'], 
+					'01/05/2019');
+
 
 
 	# SOCIAL NETWORKS
@@ -111,12 +126,13 @@
 	$Info->seo_convert 		= $Info->getSEOPhone(1)['SEOConvert'];
 
 	// echo $Info->seo_convert;
-
 	// echo $Info->getPhrase(3);
 	// echo $Info->getHome(1, 15);
 	// echo $Info->getAbout(2, 10);
 	// echo $Info->getService(2, 30)['content'];
 	// echo $Info->getReview(2, 10)['comment'];
+	// echo $Info->getLanding(1, 2, 5)['p'];
+	// echo $Info->getBlog(1, 2, 15)['p'];
 	// echo $Info->getWords($Info->services, 20);
 	// echo $Info->getEmail(1)['Email'];
 	// echo $Info->getPhone(1)['PhoneRef'];

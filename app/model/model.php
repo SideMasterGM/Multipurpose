@@ -6,7 +6,8 @@
 		public $phones 	= array(),	$emails = array(), 
 			   $phrases = array(),	$home 	= array(), 
 			   $about 	= array(), 	$service= array(), 
-			   $review 	= array();
+			   $review 	= array(), 	$landing= array(), 
+			   $blog 	= array();
 
 		public $services, 		$payment,
 			   $experience,		$schedule, 
@@ -173,7 +174,7 @@
 				return 'This field does not exist';
 			}
 
-			return 'There are not home records';
+			return 'There are not about records';
 		}
 
 		public function addService($title, $content){
@@ -195,7 +196,7 @@
 				return ['title' => $msg, 'content' => $msg];
 			}
 
-			$msg = 'There are not home records';
+			$msg = 'There are not service records';
 			return ['title' => $msg, 'content' => $msg];
 		}
 
@@ -229,7 +230,66 @@
 				return ['name' => $msg, 'location' => $msg, 'comment' => $msg, 'stars' => $msg];
 			}
 
-			$msg = 'There are not home records';
+			$msg = 'There are not review records';
 			return ['name' => $msg, 'location' => $msg, 'comment' => $msg, 'stars' => $msg];
+		}
+
+		public function addLanding($title, $url, $p){
+			array_push($this->landing, ['title' => $title, 'url' => $url, 'p' => $p]);
+		}
+
+		public function getLanding($number = 1, $num_paragraph = 1, $number_words = 0){
+			$landing = $this->landing;
+
+			if (is_array($landing)){
+				if (isset($landing[$number - 1])){
+
+					$paragraph = $landing[$number - 1]['p'][$num_paragraph - 1];
+
+					if ($number_words != 0)
+						$paragraph = $this->getWords($paragraph, $number_words);
+
+					return ['title' 	=> $this->landing[$number -1]['title'],  
+							'url' 		=> $this->landing[$number -1]['url'],
+							'p' 		=> $paragraph];
+
+				}
+
+				$msg = 'This field does not exist';
+				return ['title' => $msg, 'url' => $msg, 'p' => $msg];
+			}
+
+			$msg = 'There are not landing records';
+			return ['title' => $msg, 'url' => $msg, 'p' => $msg];
+		}
+
+		public function addBlog($title, $author, $p, $date){
+			array_push($this->blog, ['title' => $title, 'author' => $author, 'p' => $p, 'date' => $date]);
+		}
+
+		public function getBlog($number = 1, $num_paragraph = 1, $number_words = 0){
+			$blog = $this->blog;
+
+			if (is_array($blog)){
+				if (isset($blog[$number - 1])){
+
+					$paragraph = $blog[$number - 1]['p'][$num_paragraph - 1];
+
+					if ($number_words != 0)
+						$paragraph = $this->getWords($paragraph, $number_words);
+
+					return ['title' 	=> $this->blog[$number -1]['title'],  
+							'author' 	=> $this->blog[$number -1]['author'],
+							'p' 		=> $paragraph, 
+							'date' 		=> $this->blog[$number -1]['date']];
+
+				}
+
+				$msg = 'This field does not exist';
+				return ['title' => $msg, 'author' => $msg, 'p' => $msg, 'date' => $msg];
+			}
+
+			$msg = 'There are not blog records';
+			return ['title' => $msg, 'author' => $msg, 'p' => $msg, 'date' => $msg];
 		}
 	}
