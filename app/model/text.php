@@ -97,8 +97,6 @@
 				   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laboriosam expedita error tempora, iure mollitia doloremque, ut repellat consequuntur quam fuga optio earum ratione autem! Velit in doloribus beatae ex!'], 
 					'01/05/2019');
 
-
-
 	# SOCIAL NETWORKS
 	$Info->facebook			= '#';
 	$Info->twitter			= '#';
@@ -125,6 +123,7 @@
 	$Info->bilingual		= '';
 	$Info->seo_convert 		= $Info->getSEOPhone(1)['SEOConvert'];
 
+	$color = ['dominant' => '', 'tonic' => '', 'mediation' => ''];
 	// echo $Info->seo_convert;
 	// echo $Info->getPhrase(3);
 	// echo $Info->getHome(1, 15);
@@ -136,4 +135,3 @@
 	// echo $Info->getWords($Info->services, 20);
 	// echo $Info->getEmail(1)['Email'];
 	// echo $Info->getPhone(1)['PhoneRef'];
-	$color = ['dominant' => '', 'tonic' => '', 'mediation' => ''];

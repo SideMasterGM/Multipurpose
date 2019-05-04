@@ -10,7 +10,12 @@
 	define ("PD_INDEX", 	$Path."/");
 	define ("PD_APP", 		$Path."/app");
 
+	define ("PD_SRC", 		"app/src");
+		define ("PD_SRC_ASSETS", 	"app/src/assets");
+
 	define ("PD_VIEWS",		$Path."/app/views");
+		define ("PD_HEADERS",		$Path."/app/views/headers");
+
 	define ("PD_MODEL",		$Path."/app/model");
 		define ("PF_MODEL",		$Path."/app/model/model.php");
 		define ("PF_TEXT",	$Path."/app/model/text.php");
@@ -30,9 +35,7 @@
 		
 		define ("PD_SRC_CSS", 	"app/src/css");
 		define ("PD_SRC_JS", 	"app/src/js");
-		define ("PD_SRC_ASSETS","app/src/assets");
 		
 		define ("FAVICON", 		"app/src/assets/favicon.png");
 
 	define ("PD_GRAPHIC", 	$Path."/app/graphic");
-	define ("PD_SRC", 		$Path."/app/src");
