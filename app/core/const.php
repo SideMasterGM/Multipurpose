@@ -15,6 +15,10 @@
 
 	define ("PD_VIEWS",		$Path."/app/views");
 		define ("PD_HEADERS",		$Path."/app/views/headers");
+		define ("PD_SHARES",		$Path."/app/views/shares");
+		define ("PD_SLIDERS",		$Path."/app/views/sliders");
+
+	define ("PD_ASSETS",	$Path."/app/src/assets");
 
 	define ("PD_MODEL",		$Path."/app/model");
 		define ("PF_MODEL",		$Path."/app/model/model.php");

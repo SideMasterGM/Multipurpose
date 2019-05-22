@@ -1,4 +1,4 @@
-<header class="header1-dark-bg re-none">
+<header class="dark-transparent re-none">
     <nav class="mega-menu menuFullWidth" id="menu-1">
         <section class="menu-list-items">
             <div class="container-fluid">

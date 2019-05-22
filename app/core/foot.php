@@ -1,6 +1,11 @@
         <script src="<?php echo PD_SRC_JS; ?>/jquery.min.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/popper.min.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/bootstrap.min.js"></script>
+        <script src="<?php echo PD_SRC_JS; ?>/jquery.slitslider.js"></script>
+        <script src="<?php echo PD_SRC_JS; ?>/jquery.ba-cond.min.js"></script>
+        <script src="<?php echo PD_SRC_JS; ?>/jquery.easing.min.js"></script>
+        <script src="<?php echo PD_SRC_JS; ?>/jquery.fancybox.pack.js"></script>
+        <script src="<?php echo PD_SRC_JS; ?>/wow.min.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/mega-menu/mega_menu.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/main.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/revolution/js/revolution.addon.particles.min.js"></script>
@@ -17,6 +22,7 @@
         <script src="<?php echo PD_SRC_JS; ?>/revolution/js/extensions/revolution.extension.video.min.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/style-customizer.js"></script>
         <script src="<?php echo PD_SRC_JS; ?>/custom.js"></script>
+        <script src="<?php echo PD_SRC_JS; ?>/main2.js"></script>
 
         <script>
             var revapi1, tpj = jQuery;
