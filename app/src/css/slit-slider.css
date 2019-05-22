@@ -153,13 +153,13 @@
 }
 
 .bg-img-1 {
-	background-image: url(../../../app/src/assets/slider/banner.jpg);
+	background-image: url(../../../app/src/assets/slider/1.jpg);
 }
 .bg-img-2 {
-	background-image: url(../../../app/src/assets/slider/affinity.jpeg);
+	background-image: url(../../../app/src/assets/slider/2.jpg);
 }
 .bg-img-3 {
-	background-image: url(../../../app/src/assets/slider/cinelli.jpeg);
+	background-image: url(../../../app/src/assets/slider/3.jpg);
 }
 
 /* Animations for content elements */

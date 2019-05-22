@@ -181,19 +181,23 @@
 			array_push($this->service, ['title' => $title, 'content' => $content]);
 		}
 
-		public function getService($number, $number_words = 0){
+		public function getService($number = 1, $number_words = 0){
 			$service = $this->service;
 
 			if (is_array($service)){
 				if (isset($service[$number - 1])){
 					if ($number_words != 0)
-						return ['title' => $this->service[$number -1]['title'],  'content' => $this->getWords($service[$number - 1]['content'], $number_words)];
+						return ['count' => count($this->service), 
+								'title' => $this->service[$number -1]['title'],  
+								'content' => $this->getWords($service[$number - 1]['content'], $number_words)];
 
-					return ['title' => $this->service[$number -1]['title'],  'content' => $this->service[$number -1]['content']];
+					return ['count' => count($this->service), 
+							'title' => $this->service[$number -1]['title'],  
+							'content' => $this->service[$number -1]['content']];
 				}
 
 				$msg = 'This field does not exist';
-				return ['title' => $msg, 'content' => $msg];
+				return ['count' => $msg, 'title' => $msg, 'content' => $msg];
 			}
 
 			$msg = 'There are not service records';

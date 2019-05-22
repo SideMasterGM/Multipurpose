@@ -20,6 +20,7 @@
 
 	$Info->addPhone('(832) 845-6401');
 	$Info->addPhone('(666) 666-6401');
+
 	$Info->addEmail('contact@vazquezpaintingandremodeling.com');
 	$Info->addEmail('israelsantos179@gmail.com');
 
