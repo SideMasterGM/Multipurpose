@@ -104,7 +104,17 @@
 		}
 
 		public function getWords($sentence, $count = 23){
-			return implode(' ', array_slice(str_word_count($sentence,1), 0, $count));
+			$palabras = explode(" ", $sentence);
+			  	$numPalabras = count($palabras);
+			  	if ($numPalabras > $count) {
+			    	$offset = $count - 1;
+			    	while (in_array($palabras[$offset], $noTerminales) && $offset < $numPalabras) { $offset++; }
+			    return implode(" ", array_slice($palabras, 0, $offset + 1));
+			  }
+			  
+			  return $sentence;
+
+			// return implode(' ', array_slice(str_word_count($sentence,1), 0, $count));
 		}
 
 		public function getSEOPhone($id_phone){

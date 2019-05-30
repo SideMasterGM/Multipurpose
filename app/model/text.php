@@ -52,6 +52,7 @@
 					 4. Diligence<br/>
 					 5. Innovation');
 
+	$Info->addService('Test', '¡Haciendo una prueba de esto!');
 	$Info->addService('Interior and Exterior Painting', 'When you’re looking to add life to your faded walls, you need to turn to Vazquez Painting and Remodeling! We offer both interior and exterior painting so that you give your space the look that you’ve always wanted. Our crew uses the highest quality painting products to ensure we deliver the best results.');
 	$Info->addService('Pressure Washing', 'Make sure that your home’s exterior is always in the best condition with help from Vazquez Painting and Remodeling. Our team will ensure to get rid of all dust, dirt, mold, or even loose paint with our professional pressure washing services. We have the skills and equipment to ensure that your outdoors look in the best shape all the time.');
 	$Info->addService('Kitchen and Bathroom Remodeling', 'The kitchen and bathroom are two of the most important rooms in your home, and they should meet both your style and needs. Let the experts at Vazquez Painting and Remodeling help you achieve the look you’ve always wanted with our remodeling services. We guarantee you will love your new and beautiful bathroom and kitchen.');
